@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Vite + React + TS</title>
+</head>
+<style>
+    .hidden_scroll_x::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+<script>
+    const custome_scroll_x_center_item = document.querySelector('.custome_scroll_x_center_item');
+    custome_scroll_x_center_item.scrollLeft = 300;
+    document.querySelector('.custome_scroll_x_center_item_content').scrollLeft = 500
+</script>
+
+</html>
